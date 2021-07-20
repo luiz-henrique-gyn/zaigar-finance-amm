@@ -13,18 +13,18 @@
     {
       "name": "ZAIF Token",
       "symbol": "ZAIF",
-      "address": "0xa03AdFb4210449e96672092d718e6Ba378690c3d", 
+      "address": "0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5", 
       "addressMainnet": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-      "chainId": 97,
+      "chainId": 56,
       "decimals": 18,
       "logoURI": "../../../public/images/coins/ZAIF.png"
     },
     {
       "name": "WBNB Token",
       "symbol": "WBNB",
-      "address": "0xae13d989dac2f0debff460ac112a837c89baa7cd", 
+      "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c", 
       "addressMainnet": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-      "chainId": 97,
+      "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
@@ -39,18 +39,18 @@
     {
       "name": "BUSD Token",
       "symbol": "BUSD",
-      "address": "0x78867BbEeF44f2326bF8DDd1941a4439382EF2A7",
+      "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
       "addressMainent": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
-      "chainId": 97,
+      "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe9e7cea3dedca5984780bafc599bd69add087d56.png"
     },
     {
       "name": "Ethereum Token",
       "symbol": "ETH",
-      "address": "0x8babbb98678facc7342735486c851abd7a0d17ca",
+      "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
       "addressMainnet": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
-      "chainId": 97,
+      "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x2170ed0880ac9a755fd29b2688956bd959f933f8.png"
     },
@@ -184,14 +184,6 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xaf53d56ff99f1322515e54fdde93ff8b3b7dafd5.png"
     },
     {
-      "name": "CanYaCoin",
-      "symbol": "CAN",
-      "address": "0x007ea5c0ea75a8df45d288a4debdd5bb633f9e56",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x007ea5c0ea75a8df45d288a4debdd5bb633f9e56.png"
-    },
-    {
       "name": "Polkadot Token",
       "symbol": "DOT",
       "address": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
@@ -206,14 +198,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.png"
-    },
-    {
-      "name": "Streamity",
-      "symbol": "STM",
-      "address": "0x90df11a8cce420675e73922419e3f4f3fe13cccb",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x90df11a8cce420675e73922419e3f4f3fe13cccb.png"
     },
     {
       "name": "Ankr",

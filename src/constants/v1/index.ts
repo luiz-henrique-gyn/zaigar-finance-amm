@@ -3,14 +3,16 @@ import { ChainId } from '@pancakeswap-libs/sdk-v2'
 import V1_EXCHANGE_ABI from './v1_exchange.json'
 import V1_FACTORY_ABI from './v1_factory.json'
 
-const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
+
+ const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xC07d4604400139108BbdB3076636365A385879eF', // TODO
   [ChainId.BSCTESTNET]: '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
-}
+} 
+
 /*
 const V1_FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73', // TODO
-  [ChainId.BSCTESTNET]: '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
+  [ChainId.BSCTESTNET]: '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
 } */
 
 

@@ -37,6 +37,3 @@ cypress/screenshots
 cypress/fixtures/example.json
 
 .eslintcache
-/.github/
-clean.sh
-package-lock.json

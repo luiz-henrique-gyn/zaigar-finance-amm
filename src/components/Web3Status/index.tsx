@@ -10,10 +10,11 @@ import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
 import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
 import PortisIcon from '../../assets/images/portisIcon.png'
 import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
-import { fortmatic, injected, portis, walletconnect, walletlink, bsc } from '../../connectors'
+// import { fortmatic, injected, portis, walletconnect, walletlink, bscConnector } from '../../connectors'
+import { injected, walletconnect, walletlink, bscConnector } from '../../connectors'
 import { NetworkContextName } from '../../constants'
 import useENSName from '../../hooks/useENSName'
-import { useHasSocks } from '../../hooks/useSocksBalance'
+// import { useHasSocks } from '../../hooks/useSocksBalance'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { isTransactionRecent, useAllTransactions } from '../../state/transactions/hooks'
 import { TransactionDetails } from '../../state/transactions/reducer'
@@ -134,7 +135,7 @@ const SOCK = (
 
 // eslint-disable-next-line react/prop-types
 function StatusIcon({ connector }: { connector: AbstractConnector }) {
-  if (connector === injected || connector === bsc) {
+  if (connector === injected || connector === bscConnector) {
     return <Identicon />
   } if (connector === walletconnect) {
     return (
@@ -148,6 +149,7 @@ function StatusIcon({ connector }: { connector: AbstractConnector }) {
         <img src={CoinbaseWalletIcon} alt="" />
       </IconWrapper>
     )
+  /*
   } if (connector === fortmatic) {
     return (
       <IconWrapper size={16}>
@@ -159,8 +161,8 @@ function StatusIcon({ connector }: { connector: AbstractConnector }) {
       <IconWrapper size={16}>
         <img src={PortisIcon} alt="" />
       </IconWrapper>
-    )
-  }
+    ) */
+  } 
   return null
 }
 
@@ -180,7 +182,7 @@ function Web3StatusInner() {
   const pending = sortedRecentTransactions.filter(tx => !tx.receipt).map(tx => tx.hash)
 
   const hasPendingTransactions = !!pending.length
-  const hasSocks = useHasSocks()
+  // const hasSocks = useHasSocks()
   const toggleWalletModal = useWalletModalToggle()
 
   if (account) {
@@ -191,8 +193,7 @@ function Web3StatusInner() {
             <Text>{pending?.length} Pending</Text> <Loader stroke="white" />
           </RowBetween>
         ) : (
-          <>
-            {hasSocks ? SOCK : null}
+          <>      
             <Text>{ENSName || shortenAddress(account)}</Text>
           </>
         )}

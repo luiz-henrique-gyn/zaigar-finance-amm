@@ -5,7 +5,7 @@ import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
-import { injected, bsc, walletconnect } from 'connectors'
+import { injected, bscConnector, walletconnect } from 'connectors'
 import links from './config'
 
 const Menu: React.FC = props => {
@@ -25,7 +25,7 @@ const Menu: React.FC = props => {
         }
 
         if (connectorId === 'bsc') {
-          return activate(bsc)
+          return activate(bscConnector)
         }
 
         return activate(injected)

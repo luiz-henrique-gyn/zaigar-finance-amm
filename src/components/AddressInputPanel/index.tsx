@@ -5,7 +5,7 @@ import { useActiveWeb3React } from '../../hooks'
 import { ExternalLink, TYPE } from '../Shared'
 import { AutoColumn } from '../Column'
 import { RowBetween } from '../Row'
-import { getEtherscanLink } from '../../utils'
+import { getBscScanLink } from '../../utils'
 
 const { black: Black } = TYPE
 
@@ -105,7 +105,7 @@ export default function AddressInputPanel({
                 Recipient
               </Black>
               {address && chainId && (
-                <ExternalLink href={getEtherscanLink(chainId, name ?? address, 'address')} style={{ fontSize: '14px' }}>
+                <ExternalLink href={getBscScanLink(chainId, name ?? address, 'address')} style={{ fontSize: '14px' }}>
                   (View on bscscan)
                 </ExternalLink>
               )}

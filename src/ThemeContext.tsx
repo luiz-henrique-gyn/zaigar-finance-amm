@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ThemeProvider as SCThemeProvider } from 'styled-components'
 import { light, dark } from '@zaigar-finance/uikit'
 
@@ -16,21 +16,6 @@ const ThemeContextProvider: React.FC = ({ children }) => {
     const isDarkUserSetting = localStorage.getItem(CACHE_KEY)
     return isDarkUserSetting ? JSON.parse(isDarkUserSetting) : false
   })
-
-  const handleSetup = useCallback(event=>{
-    if(event && event.data && typeof event.data === "string" && event.data.startsWith("[iFrameSizer]message:")){
-      const dataStr = event.data.substring("[iFrameSizer]message:".length);
-      const data = JSON.parse(dataStr);
-      console.log("data.isDark", data.isDark);
-      setIsDark(()=>data.isDark);
-    }
-  }, []);
-  useEffect(()=>{
-    window.addEventListener("message", handleSetup);
-    return () => {
-      window.removeEventListener('message', handleSetup);
-    };
-  }, [handleSetup]);
 
   const toggleTheme = () => {
     setIsDark((prevState: any) => {

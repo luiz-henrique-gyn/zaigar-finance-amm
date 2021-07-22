@@ -3,7 +3,7 @@ import { AddressZero } from '@ethersproject/constants'
 import { TokenAmount, Token, ChainId, Percent, JSBI } from '@pancakeswap-libs/sdk-v2'
 
 import {
-  getEtherscanLink,
+  getBscScanLink,
   calculateSlippageAmount,
   isAddress,
   shortenAddress,
@@ -14,22 +14,22 @@ import {
 describe('utils', () => {
   describe('#getEtherscanLink', () => {
     it('correct for tx', () => {
-      expect(getEtherscanLink(1, 'abc', 'transaction')).toEqual('https://bscscan.com/tx/abc')
+      expect(getBscScanLink(1, 'abc', 'transaction')).toEqual('https://bscscan.com/tx/abc')
     })
     it('correct for token', () => {
-      expect(getEtherscanLink(1, 'abc', 'token')).toEqual('https://bscscan.com/token/abc')
+      expect(getBscScanLink(1, 'abc', 'token')).toEqual('https://bscscan.com/token/abc')
     })
     it('correct for address', () => {
-      expect(getEtherscanLink(1, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(1, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('unrecognized chain id defaults to mainnet', () => {
-      expect(getEtherscanLink(2, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(2, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('ropsten', () => {
-      expect(getEtherscanLink(3, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(3, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
     it('enum', () => {
-      expect(getEtherscanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
     })
   })
 
@@ -97,6 +97,7 @@ describe('utils', () => {
       expect(basisPointsToPercent(100).equalTo(new Percent(JSBI.BigInt(1), JSBI.BigInt(100)))).toBeTruthy()
       expect(basisPointsToPercent(500).equalTo(new Percent(JSBI.BigInt(5), JSBI.BigInt(100)))).toBeTruthy()
       expect(basisPointsToPercent(50).equalTo(new Percent(JSBI.BigInt(5), JSBI.BigInt(1000)))).toBeTruthy()
+      expect(basisPointsToPercent(110.00000000000001).equalTo(new Percent(JSBI.BigInt(110), JSBI.BigInt(10000)))).toBeTruthy()
     })
   })
 })

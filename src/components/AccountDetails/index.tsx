@@ -6,7 +6,7 @@ import { ExternalLink as LinkIcon } from 'react-feather'
 import { useActiveWeb3React } from '../../hooks'
 import { AppDispatch } from '../../state'
 import { clearAllTransactions } from '../../state/transactions/actions'
-import { shortenAddress, getEtherscanLink } from '../../utils'
+import { shortenAddress, getBscScanLink } from '../../utils'
 import { AutoRow } from '../Row'
 import Copy from './Copy'
 import Transaction from './Transaction'
@@ -14,11 +14,11 @@ import Transaction from './Transaction'
 import { SUPPORTED_WALLETS } from '../../constants'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 
-import { injected, walletconnect, walletlink, fortmatic, portis, bsc } from '../../connectors'
+import { injected, walletconnect, walletlink, bscConnector } from '../../connectors'
 import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
 import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
-import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
-import PortisIcon from '../../assets/images/portisIcon.png'
+// import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
+// import PortisIcon from '../../assets/images/portisIcon.png'
 import Identicon from '../Identicon'
 import { ExternalLink, LinkStyledButton, TYPE } from '../Shared'
 
@@ -274,29 +274,6 @@ export default function AccountDetails({
         </IconWrapper>
       )
     }
-    if (connector === fortmatic) {
-      return (
-        <IconWrapper size={16}>
-          <img src={FortmaticIcon} alt="fortmatic logo" />
-        </IconWrapper>
-      )
-    }
-    if (connector === portis) {
-      return (
-        <>
-          <IconWrapper size={16}>
-            <img src={PortisIcon} alt="portis logo" />
-            <MainWalletAction
-              onClick={() => {
-                portis.portis.showPortis()
-              }}
-            >
-              Show Portis
-            </MainWalletAction>
-          </IconWrapper>
-        </>
-      )
-    }
     return null
   }
 
@@ -317,7 +294,7 @@ export default function AccountDetails({
               <AccountGroupingRow>
                 {formatConnectorName()}
                 <div>
-                  {connector !== injected && connector !== walletlink && connector !== bsc && (
+                  {connector !== injected && connector !== walletlink && connector !== bscConnector && (
                     <WalletAction
                       style={{ fontSize: '.825rem', fontWeight: 400, marginRight: '8px' }}
                       onClick={() => {
@@ -370,7 +347,7 @@ export default function AccountDetails({
                           <AddressLink
                             hasENS={!!ENSName}
                             isENS
-                            href={chainId && getEtherscanLink(chainId, ENSName, 'address')}
+                            href={chainId && getBscScanLink(chainId, ENSName, 'address')}
                           >
                             <LinkIcon size={16} />
                             <span style={{ marginLeft: '4px' }}>View on bscscan</span>
@@ -392,7 +369,7 @@ export default function AccountDetails({
                           <AddressLink
                             hasENS={!!ENSName}
                             isENS={false}
-                            href={getEtherscanLink(chainId, account, 'address')}
+                            href={getBscScanLink(chainId, account, 'address')}
                           >
                             <LinkIcon size={16} />
                             <span style={{ marginLeft: '4px' }}>View on bscscan</span>

@@ -45,10 +45,10 @@ const config: MenuEntry[] = [
     label: 'Info',
     icon: 'InfoIcon',
     items: [
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/zaigar-finance/',
-      },    
+    //  {
+     //   label: 'CoinMarketCap',
+    //    href: 'https://coinmarketcap.com/currencies/zaigar-finance/',
+    //  },     
       {
         label: 'Price Chart',
         href: 'https://goswapp-bsc.web.app/0x0288D3E353fE2299F11eA2c2e1696b4A648eCC07',
@@ -61,10 +61,10 @@ const config: MenuEntry[] = [
         label: 'PancakeSwap',
         href: 'https://pancakeswap.info/token/0x0288D3E353fE2299F11eA2c2e1696b4A648eCC07',
       },
-      {
-        label: 'Add to Metamask',
-        href: 'https://bit.ly/3sSDdrB',
-      },    
+  //    {
+ //       label: 'Add to Metamask',
+ //       href: 'https://bit.ly/3sSDdrB',
+ //     },    
     ],
   },
    {
@@ -77,11 +77,11 @@ const config: MenuEntry[] = [
 //    icon: 'AuditIcon',
 //    href: 'https://certik.org/projects/zcore',
 //  },  
-   {
-    label: 'Docs',
-    icon: 'GitbookIcon',
-    href: 'https://docs.zcore.fi/',
-  },   
+//   {
+//    label: 'Docs',
+//    icon: 'GitbookIcon',
+//    href: 'https://docs.zcore.fi/',
+//  },   
 ]
 
 export default config

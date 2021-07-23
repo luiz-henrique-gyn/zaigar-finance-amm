@@ -29,6 +29,24 @@
 
     },
     {
+      "name": "NewToken Finance",
+      "symbol": "SYMBOL",
+      "address": "0x0748C622b99aebE29c63aB63f25258E613bEacda",
+      "chainId": 97,
+      "decimals": 18,
+      "logoURI": "https://exchange.zaigar.finance/images/coins/ZAIF.png"
+
+    },
+    {
+      "name": "CBRL Token",
+      "symbol": "cBrl",
+      "address": "0x9e691fd624410d631c082202b050694233031cb7",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.zaigar.finance/images/coins/CBRL.png"
+
+    },
+    {
       "name": "Bakery Token",
       "symbol": "BAKE",
       "address": "0xe02df9e3e622debdd69fb838bb799e3f168902c5",

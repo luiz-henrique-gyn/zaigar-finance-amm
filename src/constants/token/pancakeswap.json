@@ -39,10 +39,10 @@
     },
     {
       "name": "CBRL Token",
-      "symbol": "cBrl",
+      "symbol": "CBRL",
       "address": "0x9e691fd624410d631c082202b050694233031cb7",
       "chainId": 56,
-      "decimals": 18,
+      "decimals": 6,
       "logoURI": "https://exchange.zaigar.finance/images/coins/CBRL.png"
 
     },

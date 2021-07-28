@@ -5,6 +5,7 @@ import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
+import useGetZaifPriceData from 'hooks/useGetZaifPriceData'
 import { injected, bscConnector, walletconnect } from 'connectors'
 import links from './config'
 
@@ -13,11 +14,13 @@ const Menu: React.FC = props => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = useGetPriceData()
+  const zaifPriceUsd = useGetZaifPriceData()
 
   return (
     <UikitMenu
       links={links}
-      priceLink="https://bscscan.com/token/0x0288d3e353fe2299f11ea2c2e1696b4a648ecc07"
+      priceLinkZfai="https://bscscan.com/token/0x0288d3e353fe2299f11ea2c2e1696b4a648ecc07"
+      priceLinkZaif="https://bscscan.com/token/0x0288d3e353fe2299f11ea2c2e1696b4a648ecc07"
       account={account as string}
       login={(connectorId: ConnectorId) => {
         if (connectorId === 'walletconnect') {
@@ -37,6 +40,7 @@ const Menu: React.FC = props => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd}
+      zaifPriceUsd={zaifPriceUsd}
       {...props}
     />
   )

@@ -50,16 +50,16 @@ const config: MenuEntry[] = [
     //    href: 'https://coinmarketcap.com/currencies/zaigar-finance/',
     //  },     
       {
-        label: 'Price Chart',
-        href: 'https://goswapp-bsc.web.app/0x0288D3E353fE2299F11eA2c2e1696b4A648eCC07',
+        label: 'ZAIF-Price Chart',
+        href: 'https://goswapp-bsc.web.app/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5',
       },      
+      {
+        label: 'ZAIF-PancakeSwap',
+        href: 'https://pancakeswap.info/token/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5',
+      },
       {
         label: 'Github',
         href: 'https://github.com/zaigar-finance/',
-      },
-      {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x0288D3E353fE2299F11eA2c2e1696b4A648eCC07',
       },
   //    {
  //       label: 'Add to Metamask',
@@ -73,14 +73,14 @@ const config: MenuEntry[] = [
     href: 'https://zaigar.com',
   },
 //   {
-//    label: 'Audit By Certik',
+//    label: 'Audit By TechRate',
 //    icon: 'AuditIcon',
 //    href: 'https://certik.org/projects/zcore',
 //  },  
 //   {
 //    label: 'Docs',
 //    icon: 'GitbookIcon',
-//    href: 'https://docs.zcore.fi/',
+//    href: 'https://docs.zaigar.fi/',
 //  },   
 ]
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import { useMulticallContract } from './useContract'
 import ERC20_INTERFACE from '../constants/abis/erc20'
-import  priceContracts from '../constants/zfaiPriceContracts'
+import  zaifpriceContracts from '../constants/zaifPriceContracts'
 
 type ApiResponse = {
   prices: {
@@ -17,7 +17,7 @@ type ApiResponse = {
  */
 const api = 'https://api.pancakeswap.com/api/v1/price'
 
-const useGetPriceData = () => {
+const useGetZaifPriceData = () => {
   const [data, setData] = useState<number>(0)
 
   const multicallContract = useMulticallContract();
@@ -26,20 +26,19 @@ const useGetPriceData = () => {
     const fetchData = async () => {
       try {
         if(multicallContract){
-          const {cakeAddress, busdAddress, lpAddress} = priceContracts;
+          const {zaifAddress, busdAddress,zaiflpAddress} = zaifpriceContracts;
           const calls = [
-            [cakeAddress, ERC20_INTERFACE.encodeFunctionData("balanceOf", [lpAddress])],
-            [busdAddress, ERC20_INTERFACE.encodeFunctionData("balanceOf", [lpAddress])],
+            [zaifAddress, ERC20_INTERFACE.encodeFunctionData("balanceOf", [zaiflpAddress])],
+            [busdAddress, ERC20_INTERFACE.encodeFunctionData("balanceOf", [zaiflpAddress])],
           ];
 
           const [resultsBlockNumber, result] = await multicallContract.aggregate(calls);
-          const [cakeAmount, busdAmount] = result.map(r=>ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
-          const cake = new BigNumber(cakeAmount);
+          const [zaifAmount, busdAmount] = result.map(r=>ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
           const busd = new BigNumber(busdAmount);
-          const cakePrice = busd.div(cake).toNumber();
+          const zaif = new BigNumber(zaifAmount);
+          const zaifPrice = busd.div(zaif).toNumber();
 
-          setData(cakePrice)
-
+          setData(zaifPrice)
         }
       } catch (error) {
         console.error('Unable to fetch price data:', error)
@@ -52,7 +51,7 @@ const useGetPriceData = () => {
   return data
 }
 
-export default useGetPriceData
+export default useGetZaifPriceData
 
 /*
 import { useEffect, useState } from 'react'

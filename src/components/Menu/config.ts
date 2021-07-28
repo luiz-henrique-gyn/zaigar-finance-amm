@@ -51,7 +51,7 @@ const config: MenuEntry[] = [
     //  },     
       {
         label: 'ZAIF-Price Chart',
-        href: 'https://goswapp-bsc.web.app/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5',
+        href: 'https://dex.guru/token/0x280c3fc949b1a1d7a470067ca6f7b48b3cb219c5-bsc',
       },      
       {
         label: 'ZAIF-PancakeSwap',

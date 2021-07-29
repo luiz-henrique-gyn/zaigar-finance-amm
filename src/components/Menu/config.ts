@@ -24,7 +24,7 @@ const config: MenuEntry[] = [
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://zaigar.finance/pools',
+    href: 'https://zaigar.finance/nests',
   },
   // {
   //   label: 'Pools',

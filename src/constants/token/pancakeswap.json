@@ -183,22 +183,6 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x7f70642d88cf1c4a3a7abb072b53b929b653eda5.png"
     },
     {
-      "name": "Cream",
-      "symbol": "CREAM",
-      "address": "0xd4cb328a82bdf5f03eb737f37fa6b370aef3e888",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xd4cb328a82bdf5f03eb737f37fa6b370aef3e888.png"
-    },
-    {
-      "name": "Prometeus",
-      "symbol": "PROM",
-      "address": "0xaf53d56ff99f1322515e54fdde93ff8b3b7dafd5",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xaf53d56ff99f1322515e54fdde93ff8b3b7dafd5.png"
-    },
-    {
       "name": "Polkadot Token",
       "symbol": "DOT",
       "address": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402",
@@ -245,14 +229,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xae9269f27437f0fcbc232d39ec814844a51d6b8f.png"
-    },
-    {
-      "name": "SPARTAN PROTOCOL TOKEN",
-      "symbol": "SPART",
-      "address": "0xe4ae305ebe1abe663f261bc00534067c80ad677c",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe4ae305ebe1abe663f261bc00534067c80ad677c.png"
     },
     {
       "name": "Trust Wallet",
@@ -327,14 +303,6 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x1203355742e76875154c0d13eb81dcd7711dc7d9.png"
     },
     {
-      "name": "Injective Protocol",
-      "symbol": "INJ",
-      "address": "0xa2B726B1145A4773F68593CF171187d8EBe4d495",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xa2B726B1145A4773F68593CF171187d8EBe4d495.png"
-    },
-    {
       "name": "Swipe",
       "symbol": "SXP",
       "address": "0x47bead2563dcbf3bf2c9407fea4dc236faba485a",
@@ -357,22 +325,6 @@
       "chainId": 56,
       "decimals": 6,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xa8c2b8eec3d368c0253ad3dae65a5f2bbb89c929.png"
-    },
-    {
-      "name": "NAR Token",
-      "symbol": "NAR",
-      "address": "0xa1303e6199b319a891b79685f0537d289af1fc83",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xa1303e6199b319a891b79685f0537d289af1fc83.png"
-    },
-    {
-      "name": "Nyanswop Token",
-      "symbol": "NYA",
-      "address": "0xbfa0841f7a90c4ce6643f651756ee340991f99d5",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xbfa0841f7a90c4ce6643f651756ee340991f99d5.png"
     },
     {
       "name": "HARD",
@@ -405,14 +357,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xb8C540d00dd0Bf76ea12E4B4B95eFC90804f924E.png"
-    },
-    {
-      "name": "Qian Governance Token",
-      "symbol": "KUN",
-      "address": "0x1A2fb0Af670D0234c2857FaD35b789F8Cb725584",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x1A2fb0Af670D0234c2857FaD35b789F8Cb725584.png"
     },
     {
       "name": "VAI Stablecoin",
@@ -509,22 +453,6 @@
       "chainId": 56,
       "decimals": 2,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x80d5f92c2c8c682070c95495313ddb680b267320.png"
-    },
-    {
-      "name": "AllianceBlock",
-      "symbol": "bALBT",
-      "address": "0x72faa679e1008ad8382959ff48e392042a8b06f7",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x72faa679e1008ad8382959ff48e392042a8b06f7.png"
-    },
-    {
-      "name": "Tenet",
-      "symbol": "TEN",
-      "address": "0xdff8cb622790b7f92686c722b02cab55592f152c",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xdff8cb622790b7f92686c722b02cab55592f152c.png"
     },
     {
       "name": "Helmet.insure",
@@ -663,22 +591,6 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x762539b45a1dcce3d36d080f74d1aed37844b878.png"
     },
     {
-      "name": "Beacon ETH",
-      "symbol": "BETH",
-      "address": "0x250632378e573c6be1ac2f97fcdf00515d0aa91b",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x250632378e573c6be1ac2f97fcdf00515d0aa91b.png"
-    },
-    {
-      "name": "lUSD",
-      "symbol": "lUSD",
-      "address": "0x23e8a70534308a4AAF76fb8C32ec13d17a3BD89e",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x23e8a70534308a4AAF76fb8C32ec13d17a3BD89e.png"
-    },
-    {
       "name": "SafePal Token",
       "symbol": "SFP",
       "address": "0xd41fdb03ba84762dd66a0af1a6c8540ff1ba5dfb",
@@ -693,14 +605,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x52ce071bd9b1c4b00a0b92d298c512478cad67e8.png"
-    },
-    {
-      "name": "Swirge Pay",
-      "symbol": "SWGb",
-      "address": "0xe40255c5d7fa7ceec5120408c78c787cecb4cfdb",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xe40255c5d7fa7ceec5120408c78c787cecb4cfdb.png"
     },
     {
       "name": "renBTC",
@@ -765,14 +669,6 @@
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xF35262a9d427F96d2437379eF090db986eaE5d42.png"
-    },
-    {
-      "name": "BoringDAO",
-      "symbol": "BOR",
-      "address": "0x92d7756c60dcfd4c689290e8a9f4d263b3b32241",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x92d7756c60dcfd4c689290e8a9f4d263b3b32241.png"
     },
     {
       "name": "renZEC",
@@ -903,28 +799,12 @@
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x96dd399f9c3afda1f194182f71600f1b65946501.png"
     },
     {
-      "name": "Tixl",
-      "symbol": "TXL",
-      "address": "0x1ffd0b47127fdd4097e54521c9e2c7f0d66aafc5",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x1ffd0b47127fdd4097e54521c9e2c7f0d66aafc5.png"
-    },
-    {
       "name": "Alpaca",
       "symbol": "ALPACA",
       "address": "0x8f0528ce5ef7b51152a59745befdd91d97091d2f",
       "chainId": 56,
       "decimals": 18,
       "logoURI": "https://exchange.pancakeswap.finance/images/coins/0x8f0528ce5ef7b51152a59745befdd91d97091d2f.png"
-    },
-    {
-      "name": "Dusk",
-      "symbol": "DUSK",
-      "address": "0xb2bd0749dbe21f623d9baba856d3b0f0e1bfec9c",
-      "chainId": 56,
-      "decimals": 18,
-      "logoURI": "https://exchange.pancakeswap.finance/images/coins/0xb2bd0749dbe21f623d9baba856d3b0f0e1bfec9c.png"
     }
   ]
 }

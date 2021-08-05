@@ -48,7 +48,15 @@ const config: MenuEntry[] = [
     //  {
      //   label: 'CoinMarketCap',
     //    href: 'https://coinmarketcap.com/currencies/zaigar-finance/',
-    //  },     
+    //  },
+      {
+        label: 'ZFAI-Price Chart',
+        href: 'https://dex.guru/token/0x205cD59eEA8e8c5083f16D20e1050fD4a7d72037-bsc',
+      },      
+      {
+        label: 'ZFAI-PancakeSwap',
+        href: 'https://pancakeswap.info/token/0x205cD59eEA8e8c5083f16D20e1050fD4a7d72037',
+      },     
       {
         label: 'ZAIF-Price Chart',
         href: 'https://dex.guru/token/0x280c3fc949b1a1d7a470067ca6f7b48b3cb219c5-bsc',

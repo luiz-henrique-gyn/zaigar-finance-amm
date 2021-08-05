@@ -19,7 +19,7 @@ const Menu: React.FC = props => {
   return (
     <UikitMenu
       links={links}
-      priceLinkZfai="https://bscscan.com/token/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5"
+      priceLinkZfai="https://bscscan.com/token/0x205cD59eEA8e8c5083f16D20e1050fD4a7d72037" 
       priceLinkZaif="https://bscscan.com/token/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5"
       account={account as string}
       login={(connectorId: ConnectorId) => {

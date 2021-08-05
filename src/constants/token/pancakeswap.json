@@ -29,6 +29,15 @@
 
     },
     {
+      "name": "Zafira",
+      "symbol": "ZFAI",
+      "address": "0x205cD59eEA8e8c5083f16D20e1050fD4a7d72037",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.zaigar.finance/images/coins/ZFAI.png"
+
+    },
+    {
       "name": "NewToken Finance",
       "symbol": "SYMBOL",
       "address": "0x0748C622b99aebE29c63aB63f25258E613bEacda",

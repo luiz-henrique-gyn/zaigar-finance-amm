@@ -80,11 +80,11 @@ const config: MenuEntry[] = [
     icon:  'GroupsIcon',
     href: 'https://zaigar.com',
   },
-//   {
-//    label: 'Audit By TechRate',
-//    icon: 'AuditIcon',
-//    href: 'https://certik.org/projects/zcore',
-//  },  
+  {
+    label: 'Audit By TechRate',
+    icon: 'AuditIcon',
+    href: 'https://zaigar.finance/ZaigarFinanceTechRateAudit.pdf',
+  },  
 //   {
 //    label: 'Docs',
 //    icon: 'GitbookIcon',

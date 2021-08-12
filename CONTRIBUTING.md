@@ -1,4 +1,4 @@
-# Contributing to the Yieldbay ecosystem 🌴
+# Contributing to the Zaigar ecosystem Z
 
 Thanks for taking the time to contribute !
 

@@ -26,6 +26,11 @@ const config: MenuEntry[] = [
     icon: 'PoolIcon',
     href: 'https://zaigar.finance/nests',
   },
+  {
+    label: 'Airdrop Raffle',
+    icon: 'TicketIcon',
+    href: 'https://zaigar.finance/airdrop',
+  },
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',

@@ -7,6 +7,11 @@ const config: MenuEntry[] = [
     href: "https://zaigar.finance",
   },
   {
+    label: 'Project Info',
+    icon: 'GroupsIcon',
+    href: 'https://zaigar.finance/about',
+  },
+  {
     label: 'Exchange',
     icon: 'ExchangeIcon',
     href: "/swap",
@@ -47,7 +52,7 @@ const config: MenuEntry[] = [
   //   href: '/nft',
   // },
   {
-    label: 'Info',
+    label: 'Charts',
     icon: 'InfoIcon',
     items: [
     //  {
@@ -70,25 +75,39 @@ const config: MenuEntry[] = [
         label: 'ZAIF-PancakeSwap',
         href: 'https://pancakeswap.info/token/0x280C3Fc949b1a1D7a470067cA6F7b48b3CB219c5',
       },
-      {
-        label: 'Github',
-        href: 'https://github.com/zaigar-finance/',
-      },
   //    {
  //       label: 'Add to Metamask',
  //       href: 'https://bit.ly/3sSDdrB',
  //     },    
     ],
   },
-   {
-    label: 'zaigar.com',
-    icon:  'GroupsIcon',
-    href: 'https://zaigar.com',
-  },
+  {
+    label: 'More',
+    icon: 'MoreIcon',
+    items: [
+      {
+        label: 'Whitepaper(EN)',
+        href: 'https://zaigar.finance/ZaigarFinancewpenglish.pdf',
+      },
+      {
+        label: 'Whitepaper(PT)',
+        href: 'https://zaigar.finance/ZaigarFinancewpportuguese.pdf',
+      },
+      {
+        label: 'zaigar.com',
+        href: 'https://zaigar.com',
+      },
+    ],
+  }, 
   {
     label: 'Docs',
     icon: 'GitbookIcon',
     href: 'https://docs.zaigar.finance/',
+  },
+  {
+    label: 'GitHub',
+    icon: 'GithubIcon',
+    href: 'https://github.com/zaigar-finance/',
   },
   {
     label: 'Audit By TechRate',

@@ -47,6 +47,15 @@
 
     },
     {
+      "name": "Ysoy Chain",
+      "symbol": "YSOY",
+      "address": "0x57488Fcc3dC72Edb0a4c06a356c2c43C08BdfB42",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.zaigar.finance/images/zai/YSOY.png"
+
+    },
+    {
       "name": "BitBlocks Finance",
       "symbol": "BBKFI",
       "address": "0xfC8E68E30350c6603D3d29fCc8E676380C28FCf4",

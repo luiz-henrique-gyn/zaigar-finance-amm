@@ -65,6 +65,15 @@
 
     },
     {
+      "name": "Kripto Payment",
+      "symbol": "KPY",
+      "address": "0x809aeb4f6e6aa968019f791edc4d1d423db4aaca",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://exchange.zaigar.finance/images/zai/KPY.png"
+
+    },
+    {
       "name": "NewToken Finance",
       "symbol": "SYMBOL",
       "address": "0x0748C622b99aebE29c63aB63f25258E613bEacda",
